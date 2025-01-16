@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrinivas V N - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
+            background-attachment: fixed;
+        }
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff6f61;
+        }
+        section {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            margin: 2rem auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        h2 {
+            font-size: 2.5rem;
+            color: #6a11cb;
+            border-bottom: 2px solid #a1c4fd;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #f0f4fd;
+            margin: 0.5rem 0;
+            padding: 0.8rem;
+            border-left: 4px solid #6a11cb;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        ul li:hover {
+            transform: translateX(10px);
+        }
+        .projects, .experience {
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        .projects h3, .experience h3 {
+            font-size: 1.8rem;
+            margin-top: 0;
+            color: #333;
+        }
+        .btn {
+            display: inline-block;
+            background: #6a11cb;
+            color: #fff;
+            padding: 0.7rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .btn:hover {
+            background: #2575fc;
+            transform: scale(1.1);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        footer a {
+            color: #fda085;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            header p, nav a {
+                font-size: 1rem;
+            }
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+            section {
+                padding: 1.5rem;
+                margin: 1rem auto;
+            }
+            .projects, .experience {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 1rem 0;
+            }
+            .btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+            ul li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+    <script>
+        function setProjectLinks() {
+            document.getElementById("project1").setAttribute("href", "https://github.com/shrinivas-29/githubres");
+            document.getElementById("project2").setAttribute("href", "https://example.com/stock-market-prediction");
+        }
+    </script>
+</head>
+<body onload="setProjectLinks()">
+    <header>
+        <h1>Shrinivas V N</h1>
+        <p>Frontend Developer | HTML | CSS | JavaScript | Python</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>I am a passionate Frontend Developer with hands-on experience in designing and implementing responsive and scalable user interfaces. I am enthusiastic about delivering creative and efficient solutions to enhance user experiences.</p>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, Bootstrap, JavaScript</li>
+            <li>Python Programming</li>
+            <li>SQL Database Management</li>
+            <li>Version Control: GitHub</li>
+            <li>Development Tools: Visual Studio Code, Python IDLE</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="projects">
+            <h3>Restaurant Website</h3>
+            <p>Developed using HTML, CSS, and JavaScript, featuring shopping cart functionality and a secure payment gateway.</p>
+            <a id="project1" class="btn" href="#">View Project</a>
+        </div>
+        <div class="projects">
+            <h3>Stock Market Price Prediction and Analysis</h3>
+            <p>Created an ML model to predict stock buy/sell signals and generate price predictions.</p>
+            <a id="project2" class="btn" href="#">View Project</a>
+        </div>
+    </section>
+
+    <section id="experience" class="container">
+        <h2>Experience</h2>
+        <div class="experience">
+            <h3>Beyondex Solutions Pvt. Ltd.</h3>
+            <p>July 2024 – Sep 2024</p>
+            <p>Built a complete gym management registration website using HTML, CSS, JavaScript, and SQL. Collaborated with a team to deliver projects on time.</p>
+        </div>
+        <div class="experience">
+            <h3>Devtown</h3>
+            <p>Apr 2023 – Jun 2023</p>
+            <p>Learned frontend development basics, created a responsive landing page, and ensured smooth communication between teams.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:vigneshshrini03@gmail.com">vigneshshrini03@gmail.com</a></p>
+        <p>Phone: +91-9150653434</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/shrinivas29/">linkedin.com/in/shrinivas29</a></p>
+        <p>GitHub: <a href="https://github.com/shrinivas29">github.com/shrinivas29</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shrinivas V N. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
