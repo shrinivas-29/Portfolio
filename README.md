@@ -19,7 +19,7 @@ Welcome to my portfolio website! This is a responsive and visually appealing web
 
 ## 🚀 How to View
 
-Visit the live website: [Portfolio Website](https://<your-github-username>.github.io/portfolio)  
+Visit the live website: [Portfolio Website](https://github.com/shrinivas-29/Portfolio/blob/main/portfolio.html)  
 
 ## 🖼️ Sections
 
